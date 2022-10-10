@@ -100,7 +100,7 @@ class TaskHelper
                             });
                         });
                     });
-                })
+                }) 
                 ->orWhere(function ($query)  {
                     $query->where('type', 'weekly')->where(function ($query) {
                         $query->whereHas('cycles', function ($query) {
