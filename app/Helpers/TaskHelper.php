@@ -101,7 +101,7 @@ class TaskHelper
                         });
                     });
                 })
-                ->orWhere(function ($query) {
+                ->orWhere(function ($query)  {
                     $query->where('type', 'weekly')->where(function ($query) {
                         $query->whereHas('cycles', function ($query) {
                             $query->where('day', today()->addDay(1)->dayOfWeek);
