@@ -5,7 +5,7 @@ namespace App\Traits;
 
 trait TaskMethods
 {
-    public static function taskRules()
+    public function taskRules()
     {
         return [
             "title" => "required|max:255",
